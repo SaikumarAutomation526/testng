@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="annotations">
+	<test name="annotaion test">
+		<classes>
+			<class name="com.sai.test.NewTest">
+               <methods>
+               <include name="f"></include>
+                <include name="f1"></include>
+               </methods>
+			</class>
+		</classes>
+	</test>
+</suite>

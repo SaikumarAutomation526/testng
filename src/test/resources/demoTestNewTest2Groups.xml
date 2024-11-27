@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demotestClasses">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression" />
+			<include name="sanity" />
+			<exclude name="functional" />
+		</run>
+	</groups>
+	<test name="demoTestClasses">
+		<classes>
+			<class name="com.sai.demoTest2.NrewTest" />
+			<class name="com.sai.demoTest2.NrewTest2" />
+		</classes>
+	</test>
+</suite>

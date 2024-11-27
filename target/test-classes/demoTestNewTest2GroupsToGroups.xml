@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demotestClasses1">
+	
+	<test name="demoTestClasses">
+	<groups>
+		<define name="weekly">
+			<include name="smoke" />
+			<include name="regression" />
+			<include name="sanity" />
+		</define>
+		<define name="daily">
+			<include name="functional" />
+		</define>
+
+		<run>
+			<include name="weekly" />
+		</run>
+
+	</groups>
+		<classes>
+			<class name="com.sai.demoTest2.NrewTest" />
+			<class name="com.sai.demoTest2.NrewTest2" />
+		</classes>
+	</test>
+</suite>
